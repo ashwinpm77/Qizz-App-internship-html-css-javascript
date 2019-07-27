@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-16"/>
+        <title>Quizz App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <section id="start-section"">
+            <div>
+                <h1>Welcome to Quizz App</h1>
+                <input type="text" id="username" name="username" placeholder="Enter your Name"/>
+                <button id="login-button">Enter the Quizz</button>
+            </div>
+        </section>
+
+        <section id="quiz-section" style="display: none;">
+                <span id="uname" class="tags">User</span>
+                <span id="score" class="tags">Score</span>
+            <div>
+                <p id="question">This is where the question is?</p>
+                <div>
+                    <button class="opt" id="opta">Option A</button>
+                    <button class="opt" id="optb">Option B</button>
+                    <button class="opt" id="optc">Option C</button>
+                    <button class="opt" id="optd">Option D</button>
+                </div>
+                <button id="exit">Exit Quizz</button>
+            </div>
+        </section>
+
+        <section id="end-section" style="display: none;">
+            <div>
+                <h1>Thank You</h1>
+                <p id="end">your score</p>
+            </div>
+        </section>
+        <script src="js/controller.js"></script>
+    </body>
+</html>
